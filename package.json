@@ -1,0 +1,17 @@
+{
+  "name": "focusboard-devops",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A small study-session dashboard with a three-stage DevOps pipeline.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "start": "node scripts/server.mjs",
+    "deploy:local": "bash scripts/deploy.sh",
+    "health": "bash scripts/health-check.sh"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
