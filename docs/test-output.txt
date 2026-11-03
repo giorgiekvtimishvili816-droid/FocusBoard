@@ -1,0 +1,80 @@
+
+> focusboard-devops@1.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: removes extra spaces from a session title
+ok 1 - removes extra spaces from a session title
+  ---
+  duration_ms: 1.553053
+  type: 'test'
+  ...
+# Subtest: creates a valid session with normalized title and duration
+ok 2 - creates a valid session with normalized title and duration
+  ---
+  duration_ms: 1.972375
+  type: 'test'
+  ...
+# Subtest: rejects sessions with an invalid duration
+ok 3 - rejects sessions with an invalid duration
+  ---
+  duration_ms: 0.361776
+  type: 'test'
+  ...
+# Subtest: rejects an invalid date or category
+ok 4 - rejects an invalid date or category
+  ---
+  duration_ms: 0.176782
+  type: 'test'
+  ...
+# Subtest: calculates daily completed minutes and percent correctly
+ok 5 - calculates daily completed minutes and percent correctly
+  ---
+  duration_ms: 0.806776
+  type: 'test'
+  ...
+# Subtest: returns zero progress when there are no sessions today
+ok 6 - returns zero progress when there are no sessions today
+  ---
+  duration_ms: 0.100979
+  type: 'test'
+  ...
+# Subtest: formats durations under and over one hour
+ok 7 - formats durations under and over one hour
+  ---
+  duration_ms: 0.371762
+  type: 'test'
+  ...
+# Subtest: filters completed sessions and matches text case-insensitively
+ok 8 - filters completed sessions and matches text case-insensitively
+  ---
+  duration_ms: 0.371802
+  type: 'test'
+  ...
+# Subtest: toggles only the selected item without mutating the original list
+ok 9 - toggles only the selected item without mutating the original list
+  ---
+  duration_ms: 0.297451
+  type: 'test'
+  ...
+# Subtest: creates dates using local calendar fields
+ok 10 - creates dates using local calendar fields
+  ---
+  duration_ms: 0.328858
+  type: 'test'
+  ...
+# Subtest: weekly chart counts only completed sessions
+ok 11 - weekly chart counts only completed sessions
+  ---
+  duration_ms: 18.269673
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 85.073604

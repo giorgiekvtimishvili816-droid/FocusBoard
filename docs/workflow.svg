@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="385" viewBox="0 0 1120 385" role="img" aria-label="GitHub push or pull request goes through Build, Test, Deploy, Health Check and automatic rollback on failure">
+ <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#56637b" stroke-width="1.8"/></marker></defs>
+ <rect width="1120" height="385" rx="20" fill="#f7f8fc"/>
+ <g font-family="Arial,sans-serif" font-size="15" text-anchor="middle">
+  <rect x="26" y="86" width="166" height="108" rx="14" fill="#e9e9ff" stroke="#c7c2f9"/>
+  <text x="109" y="126" font-size="19" font-weight="bold" fill="#4032a9">GitHub</text><text x="109" y="152" fill="#655d96">Push / Pull Request</text><text x="109" y="171" font-size="13" fill="#7773a5">main · dev</text>
+  <rect x="240" y="86" width="166" height="108" rx="14" fill="#fff" stroke="#c7cfde"/><text x="323" y="127" font-size="20" font-weight="bold" fill="#293751">01 · Build</text><text x="323" y="153" fill="#7a879d">npm ci</text><text x="323" y="173" fill="#7a879d">npm run build</text>
+  <rect x="454" y="86" width="166" height="108" rx="14" fill="#fff" stroke="#c7cfde"/><text x="537" y="127" font-size="20" font-weight="bold" fill="#293751">02 · Test</text><text x="537" y="153" fill="#7a879d">11 Unit Tests</text><text x="537" y="173" fill="#7a879d">Artifact validation</text>
+  <rect x="668" y="86" width="166" height="108" rx="14" fill="#e9fff6" stroke="#a1dcc5"/><text x="751" y="127" font-size="20" font-weight="bold" fill="#187c62">03 · Deploy</text><text x="751" y="153" fill="#427c71">Blue / Green</text><text x="751" y="173" fill="#427c71">Atomic switch</text>
+  <rect x="882" y="86" width="211" height="108" rx="14" fill="#fff" stroke="#c7cfde"/><text x="988" y="127" font-size="20" font-weight="bold" fill="#293751">Health Check</text><text x="988" y="153" fill="#7a879d">GET /health &amp; /</text><text x="988" y="173" fill="#7a879d">health.log</text>
+  <path d="M192 140 H235 M406 140 H449 M620 140 H663 M834 140 H877" stroke="#56637b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M988 195 V272 H751 V199" stroke="#e17a7a" stroke-width="2.5" stroke-dasharray="7 5" fill="none" marker-end="url(#arrow)"/>
+  <rect x="822" y="249" width="122" height="24" rx="9" fill="#fff1f1"/><text x="883" y="266" fill="#ba5656" font-size="13">If failed → Rollback</text>
+  <path d="M988 194 V323 H1046" stroke="#3cb98b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <text x="1037" y="312" font-size="13" fill="#228767">Healthy</text>
+  <text x="560" y="45" fill="#293751" font-size="23" font-weight="bold">FocusBoard · CI/CD Workflow</text>
+  <text x="560" y="357" fill="#9ba6b7" font-size="13">Each job starts only after the previous job succeeds · Deploy logs are saved as artifacts</text>
+ </g>
+</svg>
