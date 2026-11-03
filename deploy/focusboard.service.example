@@ -1,0 +1,17 @@
+# Optional systemd user service for a permanently running local server.
+# Replace /ABSOLUTE/PATH/TO/FocusBoard-DevOps with your repository path.
+# Save as ~/.config/systemd/user/focusboard.service
+[Unit]
+Description=FocusBoard production web server
+After=network.target
+
+[Service]
+Type=simple
+Environment=PORT=4173
+Environment=DEPLOY_ROOT=/opt/focusboard-production/active
+ExecStart=/usr/bin/node /ABSOLUTE/PATH/TO/FocusBoard-DevOps/scripts/server.mjs
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
